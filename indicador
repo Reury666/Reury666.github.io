@@ -1,0 +1,54 @@
+var timer_glob_sec = 0,
+    timer_glob_sec_2 = 0,
+    prohod = 0,
+    timer_glob_sec_temp = 0,
+    okruglit = 0,
+    kotirovka = 0,
+    onetiksec_on = 0,
+    gorizontal_on = 0;
+var gorizontmini;
+
+function ArrowDraw(_0xf774xb, _0xf774xc, _0xf774xd, _0xf774xe, _0xf774xf, _0xf774x10, _0xf774x11, _0xf774x12, _0xf774x13) {
+    if (_0xf774xc == 'up') {
+        rasp = 1
+    };
+    if (_0xf774xc == 'down') {
+        rasp = -1
+    };
+    if (_0xf774x13 == 'str') {
+        fun = 1
+    };
+    if (_0xf774x13 == 'fill') {
+        fun = 2
+    };
+    _0xf774xb.beginPath();
+    _0xf774xb.strokeStyle = _0xf774x11;
+    _0xf774xb.fillStyle = _0xf774x11;
+    _0xf774xb.lineWidth = _0xf774x12;
+    var _0xf774x14, _0xf774x15;
+    _0xf774xd += _0xf774xf / 2;
+    _0xf774xb.moveTo(_0xf774xd, _0xf774xe);
+    _0xf774x14 = _0xf774xf / 2;
+    _0xf774x15 = rasp * _0xf774x10 / 2;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774x14 = _0xf774xf / 5;
+    _0xf774x15 = rasp * _0xf774x10 / 2;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774x14 = _0xf774xf / 5;
+    _0xf774x15 = rasp * _0xf774x10;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774x14 = -_0xf774xf / 5;
+    _0xf774x15 = rasp * _0xf774x10;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774x14 = -_0xf774xf / 5;
+    _0xf774x15 = rasp * _0xf774x10 / 2;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774x14 = -_0xf774xf / 2;
+    _0xf774x15 = rasp * _0xf774x10 / 2;
+    _0xf774xb.lineTo(_0xf774xd + _0xf774x14, _0xf774xe + _0xf774x15);
+    _0xf774xb.closePath();
+    _0xf774xb.stroke();
+    if (fun == 2) {
+        _0xf774xb.fill()
+    }
+}
